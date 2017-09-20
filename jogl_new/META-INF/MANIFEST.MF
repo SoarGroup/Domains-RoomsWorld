@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_37-b06-434-11M3909 (Apple Inc.)
+Specification-Title: Java Bindings for OpenGL API Specification
+Specification-Version: 2.0
+Specification-Vendor: JogAmp Community
+Implementation-Title: Java Bindings for OpenGL Runtime Environment
+Implementation-Version: 2.0-b930-20130313
+Implementation-Branch: master
+Implementation-Commit: 58f6f4e5665ae2c72ec6bbd86ad5a36bef00de07
+Implementation-Vendor: JogAmp Community
+Implementation-URL: http://jogamp.org/
+Extension-Name: javax.media.opengl
+Implementation-Vendor-Id: com.jogamp
+Trusted-Library: true
+

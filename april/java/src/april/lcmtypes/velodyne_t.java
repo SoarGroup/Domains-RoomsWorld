@@ -6,7 +6,6 @@
 package april.lcmtypes;
  
 import java.io.*;
-import java.nio.*;
 import java.util.*;
 import lcm.lcm.*;
  
@@ -24,10 +23,10 @@ public final class velodyne_t implements lcm.lcm.LCMEncodable
     public static final long LCM_FINGERPRINT_BASE = 0xb6befe08f6d416d3L;
  
     static {
-        LCM_FINGERPRINT = _hashRecursive(new ArrayList<Class>());
+        LCM_FINGERPRINT = _hashRecursive(new ArrayList<Class<?>>());
     }
  
-    public static long _hashRecursive(ArrayList<Class> classes)
+    public static long _hashRecursive(ArrayList<Class<?>> classes)
     {
         if (classes.contains(april.lcmtypes.velodyne_t.class))
             return 0L;

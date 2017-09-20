@@ -6,7 +6,6 @@
 package april.lcmtypes;
  
 import java.io.*;
-import java.nio.*;
 import java.util.*;
 import lcm.lcm.*;
  
@@ -26,10 +25,10 @@ public final class tag_detection_list_t implements lcm.lcm.LCMEncodable
     public static final long LCM_FINGERPRINT_BASE = 0x1542f5a87a1467d7L;
  
     static {
-        LCM_FINGERPRINT = _hashRecursive(new ArrayList<Class>());
+        LCM_FINGERPRINT = _hashRecursive(new ArrayList<Class<?>>());
     }
  
-    public static long _hashRecursive(ArrayList<Class> classes)
+    public static long _hashRecursive(ArrayList<Class<?>> classes)
     {
         if (classes.contains(april.lcmtypes.tag_detection_list_t.class))
             return 0L;

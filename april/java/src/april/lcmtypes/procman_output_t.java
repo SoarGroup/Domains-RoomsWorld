@@ -6,7 +6,6 @@
 package april.lcmtypes;
  
 import java.io.*;
-import java.nio.*;
 import java.util.*;
 import lcm.lcm.*;
  
@@ -26,10 +25,10 @@ public final class procman_output_t implements lcm.lcm.LCMEncodable
     public static final long LCM_FINGERPRINT_BASE = 0x6fda1e123c77d5e9L;
  
     static {
-        LCM_FINGERPRINT = _hashRecursive(new ArrayList<Class>());
+        LCM_FINGERPRINT = _hashRecursive(new ArrayList<Class<?>>());
     }
  
-    public static long _hashRecursive(ArrayList<Class> classes)
+    public static long _hashRecursive(ArrayList<Class<?>> classes)
     {
         if (classes.contains(april.lcmtypes.procman_output_t.class))
             return 0L;

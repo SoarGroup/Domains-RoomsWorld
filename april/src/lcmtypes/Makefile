@@ -22,7 +22,7 @@ $(LIBLCMTYPES): $(LCMTYPES_C) $(LCMTYPES_O)
 
 
 #	@echo "    [$@]"
-%.c %.h: $(LCMTYPES_DIR)%.lcm 
+%.c %.h: $(LCMTYPES_DIR)%.lcm -I/usr/local/Cellar/lcm/1.3.1/include
 	$(LCM) $< -c
 
 clean:

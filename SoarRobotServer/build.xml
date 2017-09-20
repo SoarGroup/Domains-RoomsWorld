@@ -130,6 +130,7 @@
 
         <copy todir="${jar.dir}">
             <fileset dir="${platform_native_lib.dir}" includes="**/*.jnilib" />
+            <fileset dir="${platform_native_lib.dir}" includes="**/*.soar" />
             <fileset dir="${platform_native_lib.dir}" includes="**/*.dylib" />
             <fileset dir="${platform_native_lib.dir}" includes="**/*.dll" />
             <fileset dir="${platform_native_lib.dir}" includes="**/*.so" />

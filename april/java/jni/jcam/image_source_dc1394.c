@@ -6,7 +6,7 @@
 #include <sys/ioctl.h>
 #include <sys/stat.h>
 #include <sys/mman.h>
-#include <asm/types.h>
+// #include <asm/types.h>
 #include <assert.h>
 #include <inttypes.h>
 #include <errno.h>

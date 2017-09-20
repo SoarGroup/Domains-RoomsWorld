@@ -10,7 +10,7 @@
 
 # -Wno-format-zero-length: permit printf("");
 # -Wno-unused-parameter: permit a function to ignore an argument
-CFLAGS_STD   := -std=gnu99 -g -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_REENTRANT -Wall -Wno-unused-parameter -Wno-format-zero-length -pthread
+CFLAGS_STD   := -std=gnu99 -g -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_REENTRANT -Wall -Wno-unused-parameter -Wno-format-zero-length -pthread -I/usr/local/Cellar/lcm/1.3.1/include
 LDFLAGS_STD  := -lm
 
 ROOT_PATH    := $(shell pwd)/../..
@@ -19,8 +19,8 @@ BIN_PATH     := $(ROOT_PATH)/bin
 LIB_PATH     := $(ROOT_PATH)/lib
 CONFIG_DIR   := $(shell pwd)/../../config
 
-CC           := gcc
-LD           := gcc
+CC           := clang
+LD           := clang
 
 # dynamic libraries
 ifeq "$(shell uname -s)" "Darwin"

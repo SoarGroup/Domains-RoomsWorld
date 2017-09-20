@@ -6,9 +6,9 @@
 #include <sys/ioctl.h>
 #include <sys/stat.h>
 #include <sys/mman.h>
-#include <asm/types.h>
+// #include <asm/types.h>
 #include <assert.h>
-#include <linux/videodev2.h>
+// #include <linux/videodev2.h>
 #include <errno.h>
 #include <stdint.h>
 
