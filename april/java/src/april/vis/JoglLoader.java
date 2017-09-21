@@ -116,9 +116,9 @@ public class JoglLoader implements com.sun.opengl.impl.NativeLibLoader.LoaderAct
         addPaths(dirs, System.getProperty("java.library.path"));
         addPaths(dirs, System.getProperty("jogl.library.path"));
         dirs.add("/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/");
-        dirs.add("/usr/lib/jni");
-        dirs.add("/usr/lib/jvm/java-6-openjdk/jre/lib/amd64/");
-        dirs.add("c:\\jogl\\");
+        dirs.add("/Users/mazzin/git/Soar/Domains-RoomsWorld/native/osx");
+        dirs.add("/Users/mazzin/git/Soar/Domains-RoomsWorld/release/soar_robot_server_osx");
+        dirs.add("/Users/mazzin/git/Soar/Domains-RoomsWorld/jogl_old");
 
         String libfile = makeLibraryFileName(libname);
 

@@ -3,7 +3,7 @@ package april.config;
 import java.util.*;
 import java.io.*;
 
-import april.util.*;
+//import april.util.*;
 
 /**
  * A set of key/value configuration data.
@@ -20,7 +20,7 @@ public class Config
 
     Config       root;   // a config whose prefix is empty ("")
 
-    public boolean verbose = EnvUtil.getProperty("april.config.debug", false);
+    public boolean verbose = april.util.EnvUtil.getProperty("april.config.debug", false);
 
     public Config()
     {
@@ -378,7 +378,7 @@ public class Config
         if (lines == null)
             return defaults;
 
-        return Base64.decode(lines);
+        return april.util.Base64.decode(lines);
     }
 
     public byte[] requireBytes(String key)
